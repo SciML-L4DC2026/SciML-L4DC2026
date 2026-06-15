@@ -28,13 +28,13 @@
       <h1>Scientific Machine Learning for Modeling, Optimization, and Control</h1>
       <p class="subtitle">
         A hands-on tutorial connecting physics-informed learning, differentiable programming,
-        learning-to-model, learning-to-optimize, and learning-to-control.
+        learning-to-model (L2M), learning-to-optimize (L2O), and learning-to-control (L2C).
       </p>
       <div class="button-row">
         <a class="button primary" href="#materials">View materials</a>
-        <a class="button" href="https://github.com/YOUR-ORG/L4DC-SciML-Tutorial" target="_blank" rel="noopener">GitHub repo</a>
+        <a class="button" href="https://github.com/SciML-L4DC2026/SciML-L4DC2026" target="_blank" rel="noopener">GitHub repo</a>
       </div>
-      <p class="note">Replace <code>YOUR-ORG/L4DC-SciML-Tutorial</code> with your repository path.</p>
+      <p class="note">Replace <code>https://github.com/SciML-L4DC2026/SciML-L4DC2026</code> with your repository path.</p>
     </section>
   </header>
 
@@ -122,52 +122,48 @@
 
     <section id="materials" class="section">
       <h2>Slides and notebooks</h2>
-      <p>These links are placeholders. Add files to <code>slides/</code> and <code>notebooks/</code>, then update filenames as needed.</p>
+      <p>Tutorial slides and coding examples in Google colab are available below.</p>
 
       <div class="materials-grid">
         <article class="material">
-          <h3>Introduction</h3>
-          <p>Unified SciML abstraction, differentiable programming, and tutorial roadmap.</p>
+          <h3>Scientific Machine Learning (SciML) Introduction</h3>
+          <p>Motivation, tutorial objectives and roadmap, SciML brief history and current methods, unified SciML abstraction, differentiable programming.</p>
           <div class="link-row">
             <a href="slides/intro.pdf">Slides</a>
           </div>
         </article>
 
         <article class="material">
-          <h3>L2M: Neural ODE</h3>
-          <p>Constrained system identification and neural ODE modeling in Neuromancer.</p>
+          <h3>Learning to Model (L2M)</h3>
+          <p>Problem formulation, physics-informed learning, L2M methodologies, constrained and structured Neural Ordinary Differential Equations (NODEs) and Gaussian Processed (GPs).</p>
           <div class="link-row">
             <a href="slides/l2m.pdf">Slides</a>
-            <a href="https://colab.research.google.com/github/pnnl/neuromancer/blob/master/examples/ODEs/Part_1_NODE.ipynb" target="_blank" rel="noopener">Open Colab</a>
+            <a href="https://colab.research.google.com/github/pnnl/neuromancer/blob/master/examples/ODEs/Part_1_NODE.ipynb" target="_blank" rel="noopener">L2M Colab Example 1</a>
+            <a href="https://colab.research.google.com/github/pnnl/neuromancer/blob/master/examples/ODEs/Part_1_NODE.ipynb" target="_blank" rel="noopener">L2M Colab Example 2</a>
           </div>
         </article>
 
         <article class="material">
-          <h3>L2O: Projected Gradient</h3>
-          <p>Learning to optimize constrained parametric programs.</p>
+          <h3>Learning to Optimize (L2O)</h3>
+          <p>Problem formulation, constrained parametric optimizaiton, L2O methodology, differentiable optimization, feasibility layers.</p>
           <div class="link-row">
             <a href="slides/l2o.pdf">Slides</a>
-            <a href="https://colab.research.google.com/github/pnnl/neuromancer/blob/master/examples/parametric_programming/Part_4_projectedGradient.ipynb" target="_blank" rel="noopener">Open Colab</a>
+            <a href="https://colab.research.google.com/github/pnnl/neuromancer/blob/master/examples/parametric_programming/Part_4_projectedGradient.ipynb" target="_blank" rel="noopener">L2O Colab Example 1</a>
+            <a href="https://colab.research.google.com/github/pnnl/neuromancer/blob/master/examples/parametric_programming/Part_4_projectedGradient.ipynb" target="_blank" rel="noopener">L2O Colab Example 2</a>
           </div>
         </article>
 
         <article class="material">
-          <h3>L2C: DPC ODE Control</h3>
-          <p>Differentiable Predictive Control for nonlinear ODE reference tracking.</p>
+          <h3>Learning to Control (L2C)</h3>
+          <p>Problem formulation, parametric optimal control, L2C methodology, Differentiable Predictive Control (DPC).</p>
           <div class="link-row">
             <a href="slides/l2c-dpc.pdf">Slides</a>
-            <a href="https://colab.research.google.com/github/pnnl/neuromancer/blob/master/examples/control/Part_3_ref_tracking_ODE.ipynb" target="_blank" rel="noopener">Open Colab</a>
+            <a href="https://colab.research.google.com/github/pnnl/neuromancer/blob/master/examples/control/Part_3_ref_tracking_ODE.ipynb" target="_blank" rel="noopener">L2C Colab Example 1</a>
+            <a href="https://colab.research.google.com/github/pnnl/neuromancer/blob/master/examples/control/Part_3_ref_tracking_ODE.ipynb" target="_blank" rel="noopener">L2C Colab Example 2</a>
           </div>
         </article>
 
-        <article class="material">
-          <h3>L2C: Neural Operator PDE Control</h3>
-          <p>Neural-operator-based control policies for PDE systems.</p>
-          <div class="link-row">
-            <a href="slides/l2c-pde.pdf">Slides</a>
-            <a href="notebooks/l2c_pde_control.ipynb">Notebook</a>
-          </div>
-        </article>
+
       </div>
     </section>
 
@@ -176,18 +172,18 @@
       <div class="cards three">
         <article class="card speaker">
           <div class="avatar">TB</div>
-          <h3>Thomas</h3>
-          <p>General introduction and Learning to Model.</p>
+          <h3>Thomas Beckers</h3>
+          <p>General introduction and Learning to Model (L2M).</p>
         </article>
         <article class="card speaker">
           <div class="avatar">TN</div>
-          <h3>Truong</h3>
-          <p>SciML concepts and Learning to Optimize.</p>
+          <h3>Truong X. Nghiem</h3>
+          <p>SciML methodologies and Learning to Optimize (L2O).</p>
         </article>
         <article class="card speaker">
           <div class="avatar">JD</div>
-          <h3>Jan</h3>
-          <p>Unified SciML abstraction and Learning to Control via DPC.</p>
+          <h3>Ján Drgoňa</h3>
+          <p>Unified SciML abstraction and Learning to Control (L2C).</p>
         </article>
       </div>
     </section>
@@ -195,10 +191,10 @@
     <section id="setup" class="section">
       <h2>Setup</h2>
       <p>
-        Participants can run most examples directly in Google Colab. For local execution, clone the repository
+        Participants can all examples directly in Google Colab. For local execution, clone the repository
         and install the Python dependencies below.
       </p>
-      <pre><code>git clone https://github.com/YOUR-ORG/L4DC-SciML-Tutorial.git
+      <pre><code>git clone https://github.com/SciML-L4DC2026/SciML-L4DC2026.git
 cd L4DC-SciML-Tutorial
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
@@ -209,8 +205,7 @@ pip install -r requirements.txt</code></pre>
       <h2>References and resources</h2>
       <ul class="resource-list">
         <li><a href="https://github.com/pnnl/neuromancer" target="_blank" rel="noopener">Neuromancer</a> — differentiable programming for constrained learning, modeling, optimization, and control.</li>
-        <li><a href="https://solaris-jhu.github.io/CINOC-website/" target="_blank" rel="noopener">CINOC project page</a> — example academic project page style.</li>
-        <li><a href="https://l4dc.web.ox.ac.uk/" target="_blank" rel="noopener">L4DC</a> — Learning for Dynamics and Control conference.</li>
+        <li><a href="https://sites.google.com/usc.edu/l4dc2026/" target="_blank" rel="noopener">L4DC</a> — Learning for Dynamics and Control conference.</li>
       </ul>
     </section>
   </main>
