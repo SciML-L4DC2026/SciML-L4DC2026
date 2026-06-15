@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="L4DC tutorial on Scientific Machine Learning for Modeling, Optimization, and Control." />
+  <meta name="keywords" content="Scientific Machine Learning, L4DC, Differentiable Programming, Learning to Model, Learning to Optimize, Learning to Control, DPC, Neuromancer" />
+  <title>SciML for Modeling, Optimization, and Control | L4DC Tutorial</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <script>
 window.MathJax = {
   tex: {
     inlineMath: [['$', '$'], ['\\(', '\\)']]
@@ -12,14 +20,6 @@ window.MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
   async>
 </script>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="L4DC tutorial on Scientific Machine Learning for Modeling, Optimization, and Control." />
-  <meta name="keywords" content="Scientific Machine Learning, L4DC, Differentiable Programming, Learning to Model, Learning to Optimize, Learning to Control, DPC, Neuromancer" />
-  <title>SciML for Modeling, Optimization, and Control | L4DC Tutorial</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
   <header class="hero">
@@ -83,7 +83,7 @@ window.MathJax = {
  <div class="math-box">
      \[
 \begin{aligned}
-u^\star(\xi)
+u^\star({\color{#8BC34A}{\xi}})
 =
 \arg\min_{u\in\mathcal U}
 {\color{#E57373}{\mathcal J}}(u,
@@ -93,7 +93,7 @@ u^\star(\xi)
 {\color{#64B5F6}{\mathcal N}}(u,
 {\color{#8BC34A}{\xi}})
 =0,
-\qquad
+\quad
 {\color{#64B5F6}{\mathcal B}}(u,
 {\color{#8BC34A}{\xi}})
 \le 0
@@ -105,23 +105,25 @@ u^\star(\xi)
 :
 {\color{#8BC34A}{\xi}}
 \longmapsto
-u^\star(\xi)
+u^\star({\color{#8BC34A}{\xi}})
 \]
   </div>
+
       <p class="abstraction-description">
   Here,
-  <span class="legend-sampling">\( \xi \)</span>
+  \( {\color{#8BC34A}{\xi}} \)
   denotes sampled data, parameters, or scenarios,
-  <span class="legend-loss">\( \mathcal J \)</span>
+  \( {\color{#E57373}{\mathcal J}} \)
   defines a domain-aware objective,
-  <span class="legend-prior">\( \mathcal N \)</span>
+  \( {\color{#64B5F6}{\mathcal N}} \)
   and
-  <span class="legend-prior">\( \mathcal B \)</span>
+  \( {\color{#64B5F6}{\mathcal B}} \)
   encode governing equations and constraints,
   and
-  <span class="legend-model">\( \mathcal S_\theta \)</span>
-  represents a learned parametric solution operator mapping problem instances to models, decisions, trajectories, or control actions.
+  \( {\color{#B39DDB}{\mathcal S_\theta}} \)
+  represents a learned parametric solution operator mapping problem instances to models, trajectories, or control actions.
 </p>
+
     </section>
 
 
