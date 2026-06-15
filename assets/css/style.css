@@ -309,6 +309,26 @@ h3 { color: var(--brand); line-height: 1.25; margin-top: 0; }
     box-shadow: none;
 }
 
+.legend-sampling {
+    color: #8BC34A;
+    font-weight: 600;
+}
+
+.legend-model {
+    color: #B39DDB;
+    font-weight: 600;
+}
+
+.legend-loss {
+    color: #E57373;
+    font-weight: 600;
+}
+
+.legend-prior {
+    color: #64B5F6;
+    font-weight: 600;
+}
+
 .figure-caption {
     margin-top: 0.75rem;
     font-size: 0.95rem;

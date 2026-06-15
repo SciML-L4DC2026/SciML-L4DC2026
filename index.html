@@ -108,22 +108,19 @@ u^\star(\xi)
 u^\star(\xi)
 \]
   </div>
-
       <p class="abstraction-description">
-  In this formulation,
+  Here,
   <span class="legend-sampling">\( \xi \)</span>
-  represents sampled data, parameters, or scenarios,
-  <span class="legend-model">\( \mathcal S_\theta \)</span>
-  denotes the trainable AI model architecture,
+  denotes sampled data, parameters, or scenarios,
   <span class="legend-loss">\( \mathcal J \)</span>
-  defines a domain-aware objective encoding learning, optimization, or control goals,
-  and
+  defines a domain-aware objective,
   <span class="legend-prior">\( \mathcal N \)</span>
   and
   <span class="legend-prior">\( \mathcal B \)</span>
-  represent governing equations, and constraints.
-  Together, these components define a differentiable program that unifies learning to model (L2M),
-  learning to optimize (L2O), and learning to control (L2C).
+  encode governing equations and constraints,
+  and
+  <span class="legend-model">\( \mathcal S_\theta \)</span>
+  represents a learned parametric solution operator mapping problem instances to models, decisions, trajectories, or control actions.
 </p>
     </section>
 
