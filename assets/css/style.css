@@ -265,6 +265,17 @@ h3 { color: var(--brand); line-height: 1.25; margin-top: 0; }
   font-weight: 850;
 }
 
+.speaker-affiliation {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.speaker h3 {
+  margin-bottom: 0.6rem;
+}
+
 .resource-list { padding-left: 1.25rem; }
 .footer {
   border-top: 1px solid var(--line);
