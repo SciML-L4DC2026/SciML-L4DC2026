@@ -80,13 +80,6 @@ window.MathJax = {
 </div>
 
 
-<p>
-Many scientific machine learning problems can be viewed as learning
-parametric solution operators that map problem specifications,
-measurements, or scenarios to models, decisions, trajectories,
-or control actions.
-</p>
-
  <div class="math-box">
 
     \[
@@ -101,9 +94,7 @@ or control actions.
     {\color{#8BC34A}{\xi}})
     \]
 
-    subject to
-
-    \[
+    \[\text{s.t.} \qquad
     {\color{#64B5F6}{\mathcal N}}(u,
     {\color{#8BC34A}{\xi}})
     =0,
@@ -112,8 +103,24 @@ or control actions.
     {\color{#8BC34A}{\xi}})
     \le 0.
     \]
-
   </div>
+
+      <p class="abstraction-description">
+  In this formulation,
+  <span class="legend-sampling">\( \xi \)</span>
+  represents sampled data, parameters, or scenarios,
+  <span class="legend-model">\( \mathcal S_\theta \)</span>
+  denotes the trainable AI model architecture,
+  <span class="legend-loss">\( \mathcal J \)</span>
+  defines a domain-aware objective encoding learning, optimization, or control goals,
+  and
+  <span class="legend-prior">\( \mathcal N \)</span>
+  and
+  <span class="legend-prior">\( \mathcal B \)</span>
+  represent governing equations, and constraints.
+  Together, these components define a differentiable program that unifies learning to model (L2M),
+  learning to optimize (L2O), and learning to control (L2C).
+</p>
     </section>
 
 
