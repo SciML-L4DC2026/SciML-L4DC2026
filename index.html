@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  async>
+</script>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -52,6 +64,8 @@
       </p>
 
 
+            <h3>A Unified SciML Abstraction</h3>
+
       <div class="graphical-abstract">
     <img
         src="assets/images/sciml_abstraction.png"
@@ -59,12 +73,47 @@
     />
 
     <p class="figure-caption">
-        Unified Scientific Machine Learning (SciML) abstraction.
         Modeling, optimization, and control are formulated as differentiable
         programs that combine AI architectures, domain priors, domain-aware
-        loss functions, and automatic differentiation.
+        loss functions, trained end-to-end via automatic differentiation.
     </p>
 </div>
+
+
+<p>
+Many scientific machine learning problems can be viewed as learning
+parametric solution operators that map problem specifications,
+measurements, or scenarios to models, decisions, trajectories,
+or control actions.
+</p>
+
+ <div class="math-box">
+
+    \[
+    {\color{#B39DDB}{\mathcal S_\theta}}
+    :
+    {\color{#8BC34A}{\xi}}
+    \longmapsto
+    u^\star
+    =
+    \arg\min_{u\in\mathcal U}
+    {\color{#E57373}{\mathcal J}}(u,
+    {\color{#8BC34A}{\xi}})
+    \]
+
+    subject to
+
+    \[
+    {\color{#64B5F6}{\mathcal N}}(u,
+    {\color{#8BC34A}{\xi}})
+    =0,
+    \qquad
+    {\color{#64B5F6}{\mathcal B}}(u,
+    {\color{#8BC34A}{\xi}})
+    \le 0.
+    \]
+
+  </div>
     </section>
 
 
