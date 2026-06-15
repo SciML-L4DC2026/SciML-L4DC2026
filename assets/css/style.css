@@ -230,7 +230,28 @@ h3 { color: var(--brand); line-height: 1.25; margin-top: 0; }
   background: #f8fbff;
 }
 
-.speaker { text-align: center; }
+.speaker {
+  text-align: center;
+}
+
+.speaker-photo {
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  min-height: 180px;
+  max-width: 180px;
+  max-height: 180px;
+
+  display: block;
+  margin: 0 auto 1rem auto;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 
 .avatar {
   width: 64px;
@@ -260,17 +281,3 @@ h3 { color: var(--brand); line-height: 1.25; margin-top: 0; }
   .hero-content { padding-top: 3rem; }
 }
 
-.speaker {
-  text-align: center;
-}
-
-.speaker-photo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 0 auto 1rem;
-  display: block;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  border: 4px solid #ffffff;
-}
