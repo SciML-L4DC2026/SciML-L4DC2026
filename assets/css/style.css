@@ -285,22 +285,35 @@ h3 { color: var(--brand); line-height: 1.25; margin-top: 0; }
   background: #fff;
 }
 
+/* ==========================================
+   Graphical Abstract
+   ========================================== */
+
 .graphical-abstract {
-    margin: 3rem auto 0 auto;
+    max-width: 900px;      /* match overview text width */
+    margin: 2rem auto 0 auto;
     text-align: center;
-    max-width: 1100px;
 }
 
 .graphical-abstract img {
     width: 100%;
-    max-width: 1000px;
     height: auto;
+    display: block;
 
-    border-radius: 12px;
-    background: white;
-    padding: 1rem;
+    /* optional */
+    border-radius: 8px;
 
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    /* remove card-like styling */
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.figure-caption {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #666;
 }
 
 .figure-caption {
