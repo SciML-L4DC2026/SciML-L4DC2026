@@ -350,3 +350,12 @@ h3 { color: var(--brand); line-height: 1.25; margin-top: 0; }
   .hero-content { padding-top: 3rem; }
 }
 
+.acknowledgments {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.acknowledgments p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
